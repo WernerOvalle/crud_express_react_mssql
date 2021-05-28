@@ -7,10 +7,11 @@ INSERT INTO [dbo].[fiscalias]
     )
 VALUES 
     (
-        @Nombre,
-        @Direccion,
-        @Telefono
+        @nombre,
+        @direccion,
+        @telefono
        
     )
 
-SELECT SCOPE_IDENTITY() AS FiscaliaId
+SELECT top 1 *
+  FROM [dbo].[fiscalias] order by id desc

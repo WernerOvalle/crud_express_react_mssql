@@ -1,8 +1,8 @@
 UPDATE [dbo].[fiscalias]
-SET [Nombre]=@Nombre,
-    [Direccion]=@Direccion,
-    [Telefono]=@Telefono
-WHERE [Id]=@Id
+SET [Nombre]=@nombre,
+    [Direccion]=@direccion,
+    [Telefono]=@telefono
+WHERE [Id]=@id
 
 SELECT [Nombre]
       ,[Direccion]
@@ -10,4 +10,4 @@ SELECT [Nombre]
 
 from fiscalias
 
-  WHERE [Id]=@Id
+  WHERE [Id]=@id
